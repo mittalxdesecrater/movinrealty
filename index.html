@@ -8,7 +8,7 @@
 </head>
 <body class="intro-pending">
 <div class="intro" id="intro" aria-label="Movin Realty introduction">
-  <div class="intro-glow"></div><div class="intro-content">
+  <div class="intro-glow"></div><audio id="movinIntroAudio" preload="auto" src="assets/Animation-Horizontal-1.mp3"></audio><div class="intro-content">
     <div class="intro-mark"><img src="logo.jpg" alt="Movin Realty logo"></div>
     <p class="eyebrow">CREDENCE MOVIN PVT LTD</p><h1>Every move has a <em>purpose.</em></h1>
     <button class="btn btn-gold intro-enter" id="goMovin">GO MOVIN <span>↗</span></button>
@@ -26,13 +26,8 @@
   </div></header>
   <main>
     <section class="hero">
-      <div class="hero-backdrop"></div><div class="container hero-grid">
-        <div class="hero-copy"><p class="eyebrow"><span></span> BUILT AROUND WHAT MOVES YOU</p><h1>More than a destination.<br><em>A way forward.</em></h1>
-          <p class="hero-lede">From places and properties to people, movement and possibilities — discover the services and destinations that move business forward.</p>
-          <div class="hero-actions"><a class="btn btn-gold" href="#verticals">Explore Movin <span>↗</span></a><a class="text-button" href="#about">Discover our story <span>↓</span></a></div>
-          <div class="hero-meta"><span><b>06</b> Business verticals</span><span class="meta-rule"></span><span><b>06</b> Destinations</span></div>
-        </div>
-        <div class="hero-visual"><div class="hero-photo"></div><div class="hero-stamp"><span>YOUR NEXT MOVE</span><b>STARTS HERE.</b><i>MR / 01</i></div><div class="vertical-label">MOVIN REALTY · CREDENCE MOVIN</div></div>
+      <div class="hero-backdrop"></div><div class="hero-backdrop hero-backdrop-next"></div><div class="hero-shade"></div><div class="container hero-grid">
+        <div class="hero-copy"><p class="eyebrow"><span></span> <span id="heroEyebrow">BUILT AROUND WHAT MOVES YOU</span></p><div class="hero-slide-copy" id="heroSlideCopy"><p class="hero-kicker">01 / OUR BUSINESS VERTICALS</p><h1 id="heroTitle">More than a destination.<br><em>A way forward.</em></h1><p class="hero-lede" id="heroDescription">From places and properties to people, movement and possibilities — discover the services and destinations that move business forward.</p><div class="hero-actions"><a class="btn btn-gold" id="heroExplore" href="#verticals">Explore Movin <span>↗</span></a><a class="text-button" href="#about">Discover our story <span>↓</span></a></div></div><div class="hero-meta"><span><b id="heroCount">01</b> <span id="heroCategory">Real Estate</span></span><span class="meta-rule"></span><span>06 Business verticals</span></div><div class="hero-controls"><button id="heroPrev" aria-label="Previous vertical">←</button><div class="hero-dots" id="heroDots"><button class="active" aria-label="Show Real Estate"></button><button aria-label="Show Transportation"></button><button aria-label="Show Manpower"></button><button aria-label="Show Hospitality"></button><button aria-label="Show Machinery"></button><button aria-label="Show Technology"></button></div><button id="heroNext" aria-label="Next vertical">→</button><span class="hero-auto-label">AUTO DISCOVERY / 06</span></div></div><div class="hero-visual"><div class="hero-photo" id="heroPhoto"></div><div class="hero-photo-frame"></div><div class="hero-stamp"><span id="heroStampTop">PLACES & PROPERTY</span><b id="heroStampTitle">REAL ESTATE</b><i id="heroStampIndex">MR / 01</i></div><div class="vertical-label">MOVIN REALTY · CREDENCE MOVIN</div><div class="hero-image-counter" id="heroImageCounter">01 — 06</div></div>
       </div><a class="scroll-cue" href="#verticals">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
     <section class="ticker" aria-label="Movin services"><div class="ticker-track"><span>REAL ESTATE</span><i>✳</i><span>TRANSPORTATION</span><i>✳</i><span>MANPOWER</span><i>✳</i><span>HOSPITALITY</span><i>✳</i><span>MACHINERY</span><i>✳</i><span>TECHNOLOGY</span><i>✳</i><span>REAL ESTATE</span><i>✳</i><span>TRANSPORTATION</span><i>✳</i><span>MANPOWER</span><i>✳</i></div></section>
