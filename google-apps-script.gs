@@ -16,7 +16,7 @@ function doPost(e) {
   const lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
-    if (!SHEET_ID || SHEET_ID === '1zqzUNocbFurTAGJ7o3G19mCW37F3PZXaWTqmYwciu_s') {
+    if (!SHEET_ID || SHEET_ID === 'PASTE_GOOGLE_SHEET_ID_HERE') {
       throw new Error('Configure SHEET_ID before accepting enquiries.');
     }
     const payload = JSON.parse((e && e.postData && e.postData.contents) || '{}');
