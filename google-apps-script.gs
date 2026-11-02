@@ -14,7 +14,7 @@ function doPost(e) {
     let tab = sheet.getSheetByName(TAB_NAME);
     if (!tab) tab = sheet.insertSheet(TAB_NAME);
     if (tab.getLastRow() === 0) {
-      tab.appendRow(['Submitted At','Name','Phone','Email','Service','Destination','Message','Page']);
+      tab.appendRow(['Lead Reference','Submitted At','Name','Phone','Email','Service','Destination','Requirement','Budget','Consent','Message','Page','Assigned To','Follow-up Date','Lead Status','Remarks','Conversion Status']);
       tab.setFrozenRows(1);
     }
     tab.appendRow([
@@ -25,7 +25,7 @@ function doPost(e) {
       String(payload.service || '').slice(0,100),
       String(payload.destination || '').slice(0,100),
       String(payload.message || '').slice(0,3000),
-      String(payload.page || '').slice(0,500)
+      String(payload.page || '').slice(0,500),\n      '', '', 'New', '', 'Pending'
     ]);
     return ContentService.createTextOutput(JSON.stringify({ok:true})).setMimeType(ContentService.MimeType.JSON);
   } finally {
